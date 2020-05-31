@@ -1,0 +1,580 @@
+<html>
+<title>Dark Hackers</title>
+<script>
+	window.oncontextmenu = function () {
+				return false;
+			}
+			$(document).keydown(function (event) {
+				if (event.keyCode == 123) {
+					return false;
+				}
+				else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+					return false;
+				}
+			});
+		</script>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Geostar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Devonshire" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+    <script src="http://soulwire.github.io/sketch.js/js/sketch.js" charset="utf-8"></script>
+    <style media="screen">
+        @import url(https://fonts.googleapis.com/css?family=Orbitron);
+
+        body {
+            background-color: #000;
+            overflow: hidden;
+            background-size: 500px 500px;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        h1 {
+            font-family: Orbitron;
+            color: #CF000F;
+            font-size: 50px;
+            font-weight: 500;
+            position: relative;
+            top: -1600px;
+            left: 0px;
+        }
+
+        h2 {
+            font-family: Aldrich;
+            color: #CF000F;
+            font-size: 30px;
+            font-weight: 500;
+            position: relative;
+            top: -1500px;
+            left: 0px;
+        }
+
+        h3 {
+            position: relative;
+            top: -1450px;
+            left: 0px;
+        }
+
+        h4 {
+            font-family: Geostar;
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            top: -1500px;
+            left: 0px;
+        }
+
+        p {
+            font-family: Orbitron;
+            color: #E3000E;
+            line-height: 15px;
+            position: relative;
+            top: -500px;
+        }
+
+        .fsoc {
+            width: 0px;
+            height: 0px;
+            background-image: url('');
+            background-size: 1% 1%;
+            overflow: hidden;
+            background-repeat: none;
+            position: absolute;
+            top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: -999;
+            right: 0px
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotateY(-180deg);
+            }
+
+            to {
+                transform: rotateY(0deg);
+            }
+        }
+
+        @media(max-width : 1800px) {
+            .fsoc {
+                left: 23%;
+            }
+        }
+
+        @media(max-width : 1200px) {
+            .fsoc {
+                left: 20%;
+            }
+        }
+
+        @media(max-width : 1000px) {
+            .fsoc {
+                left: 10%;
+            }
+        }
+
+        @media(max-width : 800px) {
+            .fsoc {
+                left: 5%;
+            }
+        }
+
+        @media(max-width : 600px) {
+            .fsoc {
+                left: -3%;
+            }
+        }
+
+        @media(max-width : 400px) {
+            .fsoc {
+                left: -10%;
+            }
+        }
+
+        .members {
+            position: absolute;
+            bottom: 100px;
+            color: blue;
+            font-size: 13px;
+            font-family: Orbitron;
+            margin-right: auto;
+            margin-left: auto;
+            left: 0%;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        #arohi {
+            text-align: center;
+            font-family: 'Monospace', Monospace;
+            -webkit-animation: noise-3 1s linear infinite;
+            animation: noise-3 1s linear infinite;
+            overflow: default;
+        }
+
+
+        @-webkit-keyframes noise-1 {
+
+            0%,
+            20%,
+            40%,
+            60%,
+            70%,
+            90% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: .1;
+            }
+
+            50% {
+                opacity: .5;
+                left: -6px;
+            }
+
+            80% {
+                opacity: .3;
+            }
+
+            100% {
+                opacity: .6;
+                left: 2px;
+            }
+        }
+
+        @keyframes noise-1 {
+
+            0%,
+            20%,
+            40%,
+            60%,
+            70%,
+            90% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: .1;
+            }
+
+            50% {
+                opacity: .5;
+                left: -6px;
+            }
+
+            80% {
+                opacity: .3;
+            }
+
+            100% {
+                opacity: .6;
+                left: 2px;
+            }
+        }
+
+        @-webkit-keyframes noise-2 {
+
+            0%,
+            20%,
+            40%,
+            60%,
+            70%,
+            90% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: .1;
+            }
+
+            50% {
+                opacity: .5;
+                left: 6px;
+            }
+
+            80% {
+                opacity: .3;
+            }
+
+            100% {
+                opacity: .6;
+                left: -2px;
+            }
+        }
+
+        @keyframes noise-2 {
+
+            0%,
+            20%,
+            40%,
+            60%,
+            70%,
+            90% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: .1;
+            }
+
+            50% {
+                opacity: .5;
+                left: 6px;
+            }
+
+            80% {
+                opacity: .3;
+            }
+
+            100% {
+                opacity: .6;
+                left: -2px;
+            }
+        }
+
+        @-webkit-keyframes noise {
+
+            0%,
+            3%,
+            5%,
+            42%,
+            44%,
+            100% {
+                opacity: 1;
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+            }
+
+            4.3% {
+                opacity: 1;
+                -webkit-transform: scaleY(1.7);
+                transform: scaleY(1.7);
+            }
+
+            43% {
+                opacity: 1;
+                -webkit-transform: scaleX(1.5);
+                transform: scaleX(1.5);
+            }
+        }
+
+        @keyframes noise {
+
+            0%,
+            3%,
+            5%,
+            42%,
+            44%,
+            100% {
+                opacity: 1;
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+            }
+
+            4.3% {
+                opacity: 1;
+                -webkit-transform: scaleY(1.7);
+                transform: scaleY(1.7);
+            }
+
+            43% {
+                opacity: 1;
+                -webkit-transform: scaleX(1.5);
+                transform: scaleX(1.5);
+            }
+        }
+
+        @-webkit-keyframes noise-3 {
+
+            0%,
+            3%,
+            5%,
+            42%,
+            44%,
+            100% {
+                opacity: 1;
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+            }
+
+            4.3% {
+                opacity: 1;
+                -webkit-transform: scaleY(4);
+                transform: scaleY(4);
+            }
+
+            43% {
+                opacity: 1;
+                -webkit-transform: scaleX(10) rotate(60deg);
+                transform: scaleX(10) rotate(60deg);
+            }
+        }
+
+        @keyframes noise-3 {
+
+            0%,
+            3%,
+            5%,
+            42%,
+            44%,
+            100% {
+                opacity: 1;
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+            }
+
+            4.3% {
+                opacity: 1;
+                -webkit-transform: scaleY(4);
+                transform: scaleY(4);
+            }
+
+            43% {
+                opacity: 1;
+                -webkit-transform: scaleX(10) rotate(60deg);
+                transform: scaleX(10) rotate(60deg);
+            }
+
+        }
+
+        #arohi {
+            color: white;
+            text-shadow: 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px green, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px green, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px green, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px green, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px green, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px green;
+            font-family: 'Kurale', serif;
+        }
+
+        .nick {
+            animation: blink 3s infinite;
+        }
+
+        @keyframes blink {
+            to {
+                opacity: 0.2;
+            }
+        }
+
+        #babuta {
+            color: white;
+            text-shadow: 0px 0px 3px black, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px black, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px black, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px black, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px black, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px black, 0px 0px 3px green, 0px 0px 3px blue, 0px 0px 3px black, 0px 0px 3px green, 0px 0px 3px blue;
+            font-family: 'Kurale', serif;
+        }
+
+        footer {
+            color: white;
+            font-family: 'Amaranth', sans-serif;
+            text-shadow: 0px 0px 1px blue, 0px 0px 1px blue, 0px 0px 1px blue, 0px 0px 1px blue, 0px 0px 1px blue, 0px 0px 1px blue, 0px 0px 1px blue, 0px 0px 1px blue, 0px 0px 1px blue;
+            font-size: 12px;
+            font-weight: 500;
+            position: relative;
+            top: -1510px;
+            left: 0px;
+    </style>
+
+
+
+    <div id="container"><canvas class=" sketch" height="360" width="1024"></canvas></div>
+    <br>
+
+    <center>
+
+        <div class="fsoc"></div>
+        <h1>Created By<div id="arohi">Dark Hackers<br><br>
+                <img src="https://d.top4top.io/p_1470hqvqv0.png" width="350px" height="300px"></div>
+            <p></p>
+        </h1>
+        <br>
+        <h2>Welcome Back Guys <br> We are Dark Hackers.<br>
+            <font color="white">---------------------------------------</font><br>
+            <font color="white">|</font>#Be Peacefully &amp; Make Unity <font color="white">|</font><br>
+            <font color="white">---------------------------------------</font>
+        </h2>
+        
+        <h4>
+        <div><font color="red">We Are:-<div class="nick"></div>
+                    <br>
+                    <font color="#ffffff">Dark Hackers</font>
+        <font color="red">
+            <footer><a href="https://www.shauryahacker.tk/" target="_blank">Dark Hackers</a></footer>
+        </font>
+    </center>
+    <font color="red">
+    <script>
+    	            function Particle(x, y, radius) {
+                this.init(x, y, radius);
+            }
+
+            Particle.prototype = {
+
+                init: function (x, y, radius) {
+
+                    this.alive = true;
+
+                    this.radius = radius || 10;
+                    this.wander = 0.15;
+                    this.theta = random(TWO_PI);
+                    this.drag = 0.92;
+                    this.color = 'white';
+
+                    this.x = x || 0.0;
+                    this.y = y || 0.0;
+
+                    this.vx = 0.0;
+                    this.vy = 0.0;
+                },
+
+                move: function () {
+
+                    this.x += this.vx;
+                    this.y += this.vy;
+
+                    this.vx *= this.drag;
+                    this.vy *= this.drag;
+
+                    this.theta += random(-0.5, 0.5) * this.wander;
+                    this.vx += sin(this.theta) * 0.1;
+                    this.vy += cos(this.theta) * 0.1;
+
+                    this.radius *= 0.96;
+                    this.alive = this.radius > 0.5;
+                },
+
+                draw: function (ctx) {
+
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, TWO_PI);
+                    ctx.fillStyle = this.color;
+                    ctx.fill();
+                }
+            };
+            var MAX_PARTICLES = 280;
+            var COLOURS = ['green','brown','purple', 'gray', 'red', 'dodgerblue','skyblue','pink','orange','white','lightgreen'];
+
+            var particles = [];
+            var pool = [];
+
+            var demo = Sketch.create({
+                container: document.getElementById('container')
+            });
+
+            demo.setup = function () {
+                var i, x, y;
+
+                for (i = 0; i < 20; i++) {
+                    x = (demo.width * 0.5) + random(-100, 100);
+                    y = (demo.height * 0.5) + random(-100, 100);
+                    demo.spawn(x, y);
+                }
+            };
+
+            demo.spawn = function (x, y) {
+
+                if (particles.length >= MAX_PARTICLES)
+                    pool.push(particles.shift());
+
+                particle = pool.length ? pool.pop() : new Particle();
+                particle.init(x, y, random(5, 40));
+
+                particle.wander = random(0.5, 2.0);
+                particle.color = random(COLOURS);
+                particle.drag = random(0.9, 0.99);
+
+                theta = random(TWO_PI);
+                force = random(2, 8);
+
+                particle.vx = sin(theta) * force;
+                particle.vy = cos(theta) * force;
+
+                particles.push(particle);
+            };
+
+            demo.update = function () {
+
+                var i, particle;
+
+                for (i = particles.length - 1; i >= 0; i--) {
+
+                    particle = particles[i];
+
+                    if (particle.alive) particle.move();
+                    else pool.push(particles.splice(i, 1)[0]);
+                }
+            };
+
+            demo.draw = function () {
+
+                demo.globalCompositeOperation = 'lighter';
+
+                for (var i = particles.length - 1; i >= 0; i--) {
+                    particles[i].draw(demo);
+                }
+            };
+
+            demo.mousemove = function () {
+
+                var particle, theta, force, touch, max, i, j, n;
+
+                for (i = 0, n = demo.touches.length; i < n; i++) {
+
+                    touch = demo.touches[i], max = random(1, 4);
+                    for (j = 0; j < max; j++) {
+                        demo.spawn(touch.x, touch.y);
+                    }
+
+                }
+            };
+        </script>
+    </font>
+</body>
+</html>
